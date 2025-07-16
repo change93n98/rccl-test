@@ -1,0 +1,26 @@
+export NCCL_NET_GDR_LEVEL=SYS
+
+export UCX_RNDV_SCHEME=get_acopy
+export UCX_MAX_RNDV_RAILS=2
+export UCX_MAX_EAGER_LANES=2
+export UCX_MAX_RNDV_LANES=2
+
+
+export NCCL_GRAPH_DUMP_FILE=./graph.xml
+export NCCL_TOPO_DUMP_FILE=./topo.xml
+
+export NCCL_IB_HCA=mlx5
+export NCCL_CROSS_NOC=1
+
+export NCCL_DEBUG=INFO
+
+export NCCL_NTHREADS=256
+
+export NCCL_ALGO=RING
+
+export NCCL_CROSS_NIC=1
+
+export HAS_FORCE_FINE_GRAIN_PCIE=1
+
+export NCCL_P2P_DISABLE=0
+export NCCL_P2P_LEVEL=5
